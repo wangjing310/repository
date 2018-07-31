@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+ 	<class dbstore="com.briup.server.DBStoreImpl">
+ 		<Driver>oracle.jdbc.driver.OracleDriver</Driver>
+ 		<url>jdbc:oracle:thin:@localhost:1521:XE</url>>
+ 		<user>root</user>
+ 		<pwd>root</pwd>
+ 	</class>
+ 	
+ 	<class gather="com.briup.client.GatherImpl">
+ 		<radwtmp>/jd1804_Smart/src/main/resources/radwtmp</radwtmp>
+ 		<backup>/jd1804_Smart/src/main/resources/backup.txt</backup>
+ 	</class>
+ 	
+ 	<class client="com.briup.client.ClientImpl">
+ 		<ip>localhost</ip>
+ 		<port>9999</port>	
+ 	</class>
+ 	
+ 	<class server="com.briup.server.ServerImpl">
+ 		<port>9999</port>
+ 	</class>
+ 		
+ 	<class log="com.briup.util.LogImpl">
+ 		
+ 	</class>
+
+</classes>
